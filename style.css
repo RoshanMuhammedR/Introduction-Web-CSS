@@ -51,12 +51,13 @@ h1{
     gap: 20px;
 }
 
-.text{
-    font-family: serif;
+.text {
     font-family: serif;
     font-size: 20px;
     color: gray;
+    max-width: 100%; /* Set maximum width to prevent overflow */
 }
+
 
 .flex{
     width:1000px;
@@ -66,11 +67,12 @@ h1{
     margin: 10px;
 }
 
-.flex2{
+.flex2 {
     display: flex;
     flex-direction: column;
     height: 205px;
     justify-content: center;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
 }
 
 .contact{
@@ -124,9 +126,11 @@ a:hover {
     }
     .flex2{
         justify-content: center;
+        width:auto;
         align-items: center;
     }
-    .text{
+    .text {
         text-align: center;
+        font-size: 18px; /* Adjust the font size accordingly */
     }
 }
